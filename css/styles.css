@@ -33,6 +33,12 @@ body{
     list-style: none;
 }
 
+/*************************
+********HEADER************
+*************************/
+.conteiner{
+    display: flex;
+}
 .header  {
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -46,6 +52,7 @@ body{
     font-size: 26px;
     line-height: calc(31 / 26);
     color: #000000 ;
+    padding-right: 93px;
 }
 .logo-cl{
     color: var(--akcent-cl);
@@ -54,6 +61,7 @@ body{
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #212121;
+    
 }
 .active-page{
     color: var(--akcent-cl);
@@ -63,6 +71,8 @@ body{
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #757575;
+
+
 } 
 .footer {
     background-color: #2F303A;
