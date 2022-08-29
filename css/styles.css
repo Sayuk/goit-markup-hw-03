@@ -31,19 +31,27 @@ body{
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /*************************
 ********HEADER************
 *************************/
-.conteiner{
-    display: flex;
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1650px;
+    outline: 2px solid tomato;
 }
 .header  {
     letter-spacing: 0.02em;
     font-weight: 500;
 }
 .header-nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
 }
 .logo {
     text-decoration: none;
@@ -57,31 +65,48 @@ body{
 .logo-cl{
     color: var(--akcent-cl);
 }
+.list-block{
+    display: flex;
+    margin-right: auto;
+}
+.list-block:last-child{
+    margin-right: 0;
+}
 .header-nav-list-item {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #212121;
-    
+    margin-right: 50px;
+}
+.header-nav-list-item:last-child{
+    margin-right: 344px;
 }
 .active-page{
     color: var(--akcent-cl);
 }
 
 .header-nav-list-contacti-item {
+    margin-right: 50px;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #757575;
-
-
-} 
+    } 
+    .header-nav-list-contacti-item:last-child{
+        margin-right: 0;
+    }
 .footer {
     background-color: #2F303A;
+   
 }
 .footer-bloc {
+    padding-top: 60px;
 }
 .address-maps {
+    margin-top: 20px;
 }
 .address-maps-text {
+    margin-top: 0;
+    margin-bottom: 9px;
     font-style: normal;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -89,12 +114,16 @@ body{
 }
 
 .address-list-item {
+    margin-bottom: 9px;
     font-style: normal;
     font-size: 14px;
     line-height: calc(24 / 14);
     color: rgba(255, 255, 255, 0.6);
 }
- 
+.address-list-item:last-child {
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
 
 /****************************
 *****************************
@@ -104,18 +133,23 @@ body{
 
 .section-btn {
     background-color: #2F303A;
+    text-align: center;
 }
 .section-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
+    
 }
 .btn {
     font-family: var(--main-font);
-    background:var(--akcent-cl)
+    background:var(--akcent-cl);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
@@ -126,27 +160,43 @@ body{
     cursor: pointer;
 }
 .description {
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
-.titlle {
+
+.titlle-list{
 }
 .description-list-item {
 }
 .description-tittle {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .description-text {
+    margin-top: 10px;
     font-size: 14px;
     line-height: calc(24 / 14);
     color: #757575;
 }
-.about {
+.description-text:last-child{
+    margin-bottom: 0;
 }
+.about{
+ margin-bottom: 94px;
+}
+
 .tittle {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
+    text-align: center;
 }
 
 .about-list-item {
@@ -156,19 +206,30 @@ body{
 .team {
     background-color: #F5F4FA;
 }
-.team-list-item {
+.team-tittle {
+    padding-top: 94px;
 }
+
 .team-list-item-img {
+    margin-bottom: 30px;
+
 }
 .name {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
 }
 .profession {
+    margin-top: 0;
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: calc(19 / 16);
     color: #757575;
+}
+.profession:last-child{
+    margin-bottom: 0;
 }
 
 
@@ -179,10 +240,11 @@ body{
 *****************************
 ****************************/
 .porfolio {
-    ba
+    margin-top: 94px;
 }
 
 .porfolio-btn {
+    margin-bottom: 56px;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
@@ -194,19 +256,32 @@ body{
     color: #FFFFFF;
 }
 .portfolio-list-img {
+    
 }
 .portfolio-list-img-item {
+    margin-bottom: 30px;
+}
+.portfolio-list-img-item:last-child{
+    margin-bottom: 0;
 }
 .porfolio-img {
+    margin-bottom: 20px;
 }
 .portfolio-tittle {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-bottom: 0;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
+
 }
 .portfolio-name {
+    margin-top: 0;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: calc(30 / 16);
     color: #757575;
+
 }

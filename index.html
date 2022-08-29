@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <!--Normalize-style-->
-    <link href="css/modern-normalize.css" />
+    <link href="css/modern-normalize.css" rel="stylesheet" />
 
     <!--Styles-->
     <link href="css/styles.css" rel="stylesheet" />
@@ -21,9 +21,10 @@
   <body>
     <!--header-->
     <header class="header">
-      <nav class="conteiner header-nav">
+      <div class="container">
+      <nav class="header-nav">
         <a class="logo" href="index.html"><span class="logo-cl">Web</span>Studio</a>
-        <ul class="list">
+        <ul class="list list-block">
           <li class="header-nav-list-item active-page">
             <a class="link" href="./index.html">Студія</a>
           </li>
@@ -32,7 +33,7 @@
           </li>
           <li class="header-nav-list-item"><a class="link" href="">Контакти</a></li>
         </ul>      
-      <ul class="list">
+      <ul class="list list list-block">
         <li class="header-nav-list-contacti-item">
           <a class="link" href="mailto:">info@devstudio.com</a>
         </li>
@@ -41,7 +42,9 @@
         </li>
       </ul>
     </nav>
+  </div>
     </header>
+    <div class="con"></div>
     <main>
       <!--btn-->
       <section class="section-btn">
@@ -50,8 +53,9 @@
       </section>
       <!--about -->
       <section class="description">
+        <div class="container"> 
         <h2 class="titlle" hidden>Опис</h2>
-        <ul class="list">
+        <ul class="titlle-list list">
           <li class="description-list-item">
             <h3 class="description-tittle">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="description-text">
@@ -77,9 +81,11 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!--Блок послуг-->
       <section class="about">
+        <div class="container">
         <h2 class="tittle">Чим ми займаємося</h2>
         <ul class="list">
           <li class="about-list-item">
@@ -110,10 +116,12 @@
             />
           </li>
         </ul>
+      </div>
       </section>
       <!--our team-->
       <section class="team">
-        <h2 class="tittle">Наша команда</h2>
+        <div class="container">
+        <h2 class="team-tittle tittle">Наша команда</h2>
         <ul class="list">
           <li class="team-list-item">
             <img
@@ -160,11 +168,12 @@
             <p class="profession" lang="en">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!--contact info-->
     <footer class="footer">
-      <div class="footer-bloc">
+      <div class="container footer-bloc">
         <a class="logo" href="index.html"><span class="logo-cl">Web</span>Studio</a>
         <address class="address-maps" title="адрес студії">
           <p class="address-maps-text">м. Київ, пр-т Лесі Українки, 26</p>
