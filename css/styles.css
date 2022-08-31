@@ -9,6 +9,9 @@
 --main-background-cl:#FFFFFF;
 
 /*other*/
+--items:3;
+--indent:30px;
+--border:1px;
 
 }
 
@@ -34,26 +37,32 @@ body{
     padding: 0;
     margin: 0;
 }
-
+.all-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.all-section:first-child{
+    padding: 0px;
+}
 /*************************
 ********HEADER************
 *************************/
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1650px;
-    outline: 2px solid tomato;
+    width: 1200px;
 }
 .header  {
     letter-spacing: 0.02em;
     font-weight: 500;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-nav {
-    padding-top: 32px;
-    padding-bottom: 32px;
+   align-items:center;
     display: flex;
 }
 .logo {
+    
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -68,6 +77,8 @@ body{
 .list-block{
     display: flex;
     margin-right: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .list-block:last-child{
     margin-right: 0;
@@ -135,17 +146,19 @@ body{
     background-color: #2F303A;
     text-align: center;
 }
+
 .section-title {
-    margin-top: 0;
-    margin-bottom: 30px;
+    padding-top: 200px;
+    padding-bottom: 30px;
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
-    
+    margin: 0;
+
+   
 }
 .btn {
     font-family: var(--main-font);
@@ -158,15 +171,21 @@ body{
     letter-spacing: 0.06em;
     color: #FFFFFF;
     cursor: pointer;
+    margin-bottom: 200px;
+    padding: 10px 32px;
 }
 .description {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    
 }
 
 .titlle-list{
+    display: flex;
+    justify-content:space-between;
 }
 .description-list-item {
+    
+    width: 270px;
+    
 }
 .description-tittle {
     margin-top: 0;
@@ -185,7 +204,11 @@ body{
     margin-bottom: 0;
 }
 .about{
- margin-bottom: 94px;
+
+}
+.about-list{
+    display: flex;
+    justify-content:space-between;
 }
 
 .tittle {
@@ -206,13 +229,22 @@ body{
 .team {
     background-color: #F5F4FA;
 }
+.team-list{
+    display: flex;
+    justify-content:space-between;
+
+}
 .team-tittle {
-    padding-top: 94px;
+   
+}
+.team-list-item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item-img {
     margin-bottom: 30px;
-
+    
 }
 .name {
     margin-top: 0;
@@ -220,6 +252,7 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
+    text-align: center;
 }
 .profession {
     margin-top: 0;
@@ -227,7 +260,9 @@ body{
     font-size: 16px;
     line-height: calc(19 / 16);
     color: #757575;
+    text-align: center;
 }
+
 .profession:last-child{
     margin-bottom: 0;
 }
@@ -240,26 +275,46 @@ body{
 *****************************
 ****************************/
 .porfolio {
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-
+.porfolio-container{
+    text-align: center;
+}
 .porfolio-btn {
     margin-bottom: 56px;
+    margin-right: 8px;
+    margin-bottom: 50px;
+    padding: 6px 22px;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+}
+.porfolio-btn:last-child {
+    margin-right: 0px;
+
 }
 .porfolio-btn:active {
     background-color: var(--akcent-cl);
     color: #FFFFFF;
 }
-.portfolio-list-img {
+.portfolio-list{
+    display: flex;
+    flex-wrap:wrap;
+    gap:var(--indent);
     
 }
+.portfolio-list-img {
+
+}
 .portfolio-list-img-item {
-    margin-bottom: 30px;
+
+    flex-basis: calc((100% - var(--indent) * (var(--items)-1)) / var(--items));
+    border-bottom: 1px solid #eeeeee;
 }
 .portfolio-list-img-item:last-child{
     margin-bottom: 0;
@@ -275,13 +330,19 @@ body{
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
-
+    margin-right: 24px;
+    margin-bottom: 4px;
+    margin-left: 24px;
 }
 .portfolio-name {
     margin-top: 0;
+    margin-right: 24px;
     margin-bottom: 20px;
+    margin-left: 24px;
     font-size: 16px;
     line-height: calc(30 / 16);
     color: #757575;
 
 }
+
+
